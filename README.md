@@ -50,18 +50,20 @@ No Power BI dashboard was used for this project. The purpose of this project is 
 
 ## 📊 Dataset
 
-The dataset contains Kickstarter campaign information including fields such as:
+The project uses a Kickstarter campaign dataset containing information such as:
 
 - Campaign name
 - Category
-- Goal
+- Funding goal
 - Pledged amount
 - Number of backers
 - Country
 - Launch date
 - Campaign state
 
-The raw dataset is preserved in the project folder.
+The raw CSV dataset and SQLite database are maintained locally because the files are too large for GitHub's standard web upload limit.
+
+The SQL analysis file is included in this repository so the analytical logic and queries can be reviewed directly.
 
 ---
 
@@ -256,31 +258,31 @@ This project demonstrates practical SQL skills including:
 ## 📁 Project Structure
 
 ```text
-kickstarter/
+kickstarter-campaign-analysis/
 │
-├── kickstarter_raw.csv
-├── kickstarter_analysis.db
 ├── kickstarter_analysis.sql
-├── kickstarter_analysis.sqlb.sqbpro
+├── .gitignore
 └── README.md
 ```
 
 ### File descriptions
 
-**`kickstarter_raw.csv`**  
-Original Kickstarter dataset used for the analysis.
-
-**`kickstarter_analysis.db`**  
-SQLite database containing the dataset used for querying.
-
-**`kickstarter_analysis.sql`**  
+`kickstarter_analysis.sql`  
 SQL queries used throughout the analysis.
 
-**`kickstarter_analysis.sqlb.sqbpro`**  
-DB Browser for SQLite project file.
+`README.md`  
+Project documentation, methodology, findings, business insights, and limitations.
 
-**`README.md`**  
-Project documentation, findings, and business insights.
+`.gitignore`  
+Prevents large local dataset and database files from being tracked unnecessarily.
+
+### Local project files
+
+The following files are maintained locally:
+
+- `kickstarter_raw.csv` - Raw Kickstarter dataset
+- `kickstarter_analysis.db` - SQLite database used for analysis
+- `kickstarter_analysis.sqlb.sqbpro` - DB Browser for SQLite project file
 
 ---
 
